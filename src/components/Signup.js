@@ -34,7 +34,6 @@ const Signup = () => {
     const json = await response.json();
 
     if (json.success) {
-      //save the token and redirect
       localStorage.setItem("token", json.token);
 
       navigate("/login");
